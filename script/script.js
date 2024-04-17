@@ -6,10 +6,10 @@ document.getElementById("yesButton").addEventListener("click", showAlert);
 
         var yesButton = document.getElementById("yesButton");
         var no = document.getElementById("no");
-        var valentineImage = document.getElementById("catImage");
+        var catImage = document.getElementById("catImage");
 
         var noTexts = ["Are you sure?", "Please give me a chance ba by", "no please baby", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry"];
-        var imageSources = ["https://pbs.twimg.com/media/Fyk7XMnaEAI3PsB.jpg", "https://media.tenor.com/BP70qe8X0J8AAAAe/crycat-crying-cat.png", "https://antimatter.vn/wp-content/uploads/2022/04/hinh-meo-khoc-tha-like.jpg", "https://i.pinimg.com/736x/cb/d8/3b/cbd83b534a315e809a9da2b8cd3ac3bf.jpg"];
+        var imageSources = ["https://pbs.twimg.com/media/Fyk7XMnaEAI3PsB.jpg", "https://media.tenor.com/BP70qe8X0J8AAAAe/crycat-crying-cat.png", "https://antimatter.vn/wp-content/uploads/2022/04/hinh-meo-khoc-tha-like.jpg", "https://i.pinimg.com/736x/cb/d8/3b/cbd83b534a315e809a9da2b8cd3ac3bf.jpg","https://th.bing.com/th/id/OIP.jGl4Gt6Arm8DQkGPSJYc7QHaE2?rs=1&pid=ImgDetMain","https://img.vietcetera.com/uploads/images/20-apr-2022/a-1650441653936.jpeg","https://th.bing.com/th/id/OIP.hpGedEH1O1nF_W5_ZyLDAQHaHa?rs=1&pid=ImgDetMain"];
 
         no.addEventListener("click", change);
 
@@ -29,6 +29,6 @@ document.getElementById("yesButton").addEventListener("click", showAlert);
             yesButton.style.height = currentHeight + 10 + "px";
 
             var randomImageIndex = Math.floor(Math.random() * imageSources.length);
-            valentineImage.src = imageSources[randomImageIndex];
+            catImage.src = imageSources[randomImageIndex];
         }
        
